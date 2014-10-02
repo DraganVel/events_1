@@ -34,7 +34,7 @@
         <script  src="js/jquery.mobile-1.4.4.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
          <script type="text/javascript" src="js/index.js"></script>
-        <title>Hello World</title>
+        <title>Event Test</title>
     </head>
     <body>
       <!--  <div class="app">
@@ -49,26 +49,26 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
                     app.initialize();-->
-        </script>
+        
         <div data-role="page" id="page2">
             <div data-role ="header">
-                <h1>Tap Tests</h1>
+                <h1>Event  Tests</h1>
             </div>
             <div data-role="content">
                 <p>
-                    Tap anywhere on the page...
+                    Please swipe...
                 </p>
                 <p id="status"></p>
             </div>
         </div>
         <script>
 
-        $("body").bind("tap",function(e){
-            $("#status").append("You just did a tap event<br/>");
+        $("body").bind("swiperight",function(e){
+            $("#status").append("You just did a swipe right<br/>");
         });
 
-        $("body").bind("taphold",function(e){
-            $("#status").append("You just moved mouse up<br/>");
+        $("body").bind("swipeleft",function(e){
+            $("#status").append("You just did a swipe left<br/>");
         });
 
         </script>
