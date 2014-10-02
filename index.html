@@ -59,6 +59,12 @@
                     Please swipe...
                 </p>
                 <p id="status"></p>
+                <p id="status2"></p>
+            </div>
+             <div data-role ="header">
+                 <div data-role ="footer">
+                <input id="btnRefresh" type="button" value="Refresh Page" />
+            </div>
             </div>
         </div>
         <script>
@@ -70,6 +76,10 @@
         $("body").bind("swipeleft",function(e){
             $("#status").append("You just did a swipe left<br/>");
         });
+
+        $("#btnRefresh").click( function(){
+            location.reload(true);
+           });
 
         </script>
     </body>
