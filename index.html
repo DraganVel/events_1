@@ -60,9 +60,15 @@
             </div>
         </div>
         <script type="text/javascript">
-        $("body").bind(function(){
+
+        $("body").bind("tap",function(e){
             $("#status").text("You just did a tap event");
         });
+
+        $("body").bind("taphold",function(e){
+            $("#status").text("You just did a tap event");
+        });
+
         </script>
     </body>
 </html>
